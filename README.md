@@ -16,6 +16,7 @@
 
 - Add some wireguard tweaks
 - Add many logspam filtering
-- Remove Xiaomi's zram optimization
 - Set schedutil as default scheduler
 - Add uname override for GMS
+- Remove Xiaomi's zram optimization
+- Remove LZ4KD
