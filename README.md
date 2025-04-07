@@ -11,11 +11,19 @@
 - Change default SCHED_RR timeslice from 100 ms to 1 jiffy
 - Use SCHED_RR in place of SCHED_FIFO
 - Set sched_nr_migrate back to 32 on RT for Android
-- Don't affine sugov kthreads if DVFS is allowed from any CPU
 - Forbid Unity-based games from changing their CPU affinity
 - Enable O3 optimzation
 - Drop menu cpuidle gorvernor
 - Remove DEBUGFS
+- Implement a simple task exit notifier when disabled
+- Remove dependency on the profiling subsystem
+- Remove DEBUG_KERNEL depend on DEBUG_KMEMLEAK|SCHED_DEBUG|SCHEDSTATS
+- F2FS improvement
+- kernfs: Avoid dynamic memory allocation for small write_iter() buffers
+- fscrypt: Avoid dynamic memory allocation during impl selection
+- selinux: Avoid dynamic memory allocation for INITCONTEXTLEN buffers
+- bpf: Avoid allocating small buffers for map keys and values
+- selinux: Avoid dynamic memory allocation for temporary scontext buffers
 
 -----------------------------------------------------
 
