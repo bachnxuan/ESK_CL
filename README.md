@@ -13,6 +13,9 @@
 - Set sched_nr_migrate back to 32 on RT for Android
 - Don't affine sugov kthreads if DVFS is allowed from any CPU
 - Forbid Unity-based games from changing their CPU affinity
+- Enable O3 optimzation
+- Drop menu cpuidle gorvernor
+- Remove DEBUGFS
 
 -----------------------------------------------------
 
