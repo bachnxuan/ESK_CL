@@ -1,4 +1,21 @@
 # ESK CHANGELOG
+## RELEASE 1.0 CHANGELOG (LATEST):
+- Switch to new versioning system (1.0, 1.1, 1.2,...)
+- Kernel rebase
+- Drop zram writeback
+- Adapt zram entropy calculation
+- Reduce ntp wakeups
+- Drop bfq i/o scheduler
+- Silence more logspam
+- Introduce SBalance IRQ balancer (3,7 CPU excluded)
+- Change default SCHED_RR timeslice from 100 ms to 1 jiffy
+- Use SCHED_RR in place of SCHED_FIFO
+- Set sched_nr_migrate back to 32 on RT for Android
+- Don't affine sugov kthreads if DVFS is allowed from any CPU
+- Forbid Unity-based games from changing their CPU affinity
+
+-----------------------------------------------------
+
 ## RELEASE 250406 CHANGELOG:
 - Builtin BIC, Westwood, H-TCP tcp congestion control
 - Enable ECN negotiation
