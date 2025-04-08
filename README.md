@@ -2,6 +2,7 @@
 ## RELEASE 1.1 CHANGELOG (LATEST):
 - Disabled Gentle Fair Sleepers
 - Enable NEXT_BUDDY feature
+- Drop schedutil : cap iowait boost by uclamp_max
 
 -----------------------------------------------------
 
