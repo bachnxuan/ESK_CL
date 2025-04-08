@@ -1,5 +1,16 @@
 # ESK CHANGELOG
-## RELEASE 1.0 CHANGELOG (LATEST):
+## RELEASE 1.1 CHANGELOG (LATEST):
+- Disabled Gentle Fair Sleepers
+- Enable NEXT_BUDDY feature
+- Refine workflows:
+	+ Implement scripts to build non-ksu version
+	+ Add dtb and dtbo to AnyKernel3
+	+ Stop building boot image for KernelSU version 
+	+ Build some MTK drivers as module
+
+-----------------------------------------------------
+
+## RELEASE 1.0 CHANGELOG:
 - Switch to new versioning system (1.0, 1.1, 1.2,...)
 - Kernel rebase
 - Drop zram writeback
