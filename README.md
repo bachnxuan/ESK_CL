@@ -9,6 +9,7 @@
 - Ignore rate limit when scaling up with FIE present
 - Set default rate limit to 2000 us
 - Allow single-CPU frequency to drop without idling
+- Disable profiling subsystem
 - Further logspam filtering
 #### Removed:
 - lz4: improve pipeline efficiency
