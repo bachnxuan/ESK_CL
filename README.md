@@ -1,5 +1,29 @@
 # ESK CHANGELOG
-## RELEASE 1.1 CHANGELOG (LATEST):
+## RELEASE 1.2 CHANGELOG (LATEST):
+- Builtin lz4hc
+- Upstream lz4 1.10.0
+- Don't affine sugov kthreads if DVFS is allowed from any CPU
+- Always update CPU capacity when load balancing
+- Allow CPU frequency changes to be amended before they're set
+- Ignore rate limit when scaling up with FIE present
+- Set default rate limit to 2000 us
+- Allow single-CPU frequency to drop without idling
+- Further logspam filtering
+### Drop:
+- lz4: improve pipeline efficiency
+- lz4: remove unnecessary check of ip
+- lz4: reduce usage of variable cpy on decompression
+- lz4: removed a few more usages of base ptr
+- lz4: remove another usage of base
+- lz4: simplify getPosition
+- lz4_decompress: declare LZ4_decompress_safe_withPrefix64k static
+- schedutil : cap iowait boost by uclamp_max
+- ANDROID: cpufreq/schedutil: add up/down frequency transition rate limits
+- cpufreq: schedutil: Set default up/down rate limits to 500/1000 us
+
+-----------------------------------------------------
+
+## RELEASE 1.1 CHANGELOG:
 - Disabled Gentle Fair Sleepers
 - Enable NEXT_BUDDY feature
 - Upstream 5.10.235 lts
