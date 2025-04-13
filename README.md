@@ -1,5 +1,6 @@
 # ESK CHANGELOG
 ## RELEASE 1.2 CHANGELOG (LATEST):
+#### Add:
 - Builtin lz4hc
 - Upstream lz4 1.10.0
 - Don't affine sugov kthreads if DVFS is allowed from any CPU
@@ -9,7 +10,7 @@
 - Set default rate limit to 2000 us
 - Allow single-CPU frequency to drop without idling
 - Further logspam filtering
-### Drop:
+#### Removed:
 - lz4: improve pipeline efficiency
 - lz4: remove unnecessary check of ip
 - lz4: reduce usage of variable cpy on decompression
@@ -24,6 +25,7 @@
 -----------------------------------------------------
 
 ## RELEASE 1.1 CHANGELOG:
+#### Add:
 - Disabled Gentle Fair Sleepers
 - Enable NEXT_BUDDY feature
 - Upstream 5.10.235 lts
@@ -31,12 +33,11 @@
 -----------------------------------------------------
 
 ## RELEASE 1.0 CHANGELOG:
+#### Add:
 - Switch to new versioning system (1.0, 1.1, 1.2,...)
 - Kernel rebase
-- Drop zram writeback
 - Adapt zram entropy calculation
 - Reduce ntp wakeups
-- Drop bfq i/o scheduler
 - Silence more logspam
 - Introduce SBalance IRQ balancer (3,7 CPU excluded)
 - Change default SCHED_RR timeslice from 100 ms to 1 jiffy
@@ -44,8 +45,6 @@
 - Set sched_nr_migrate back to 32 on RT for Android
 - Forbid Unity-based games from changing their CPU affinity
 - Enable O3 optimzation
-- Drop menu cpuidle gorvernor
-- Remove DEBUGFS
 - Implement a simple task exit notifier when disabled
 - Remove dependency on the profiling subsystem
 - Remove DEBUG_KERNEL depend on DEBUG_KMEMLEAK|SCHED_DEBUG|SCHEDSTATS
@@ -55,10 +54,16 @@
 - selinux: Avoid dynamic memory allocation for INITCONTEXTLEN buffers
 - bpf: Avoid allocating small buffers for map keys and values
 - selinux: Avoid dynamic memory allocation for temporary scontext buffers
+#### Removed:
+- bfq i/o scheduler
+- menu cpuidle gorvernor
+- DEBUGFS
+- zram writeback
 
 -----------------------------------------------------
 
 ## RELEASE 250406 CHANGELOG:
+#### Add:
 - Builtin BIC, Westwood, H-TCP tcp congestion control
 - Enable ECN negotiation
 - Bump TTL to 255
@@ -73,5 +78,6 @@
 - Add many logspam filtering
 - Set schedutil as default scheduler
 - Add uname override for GMS
-- Drop Xiaomi's zram optimization
-- Drop LZ4KD
+#### Removed:
+- Xiaomi's zram optimization
+- LZ4KD
