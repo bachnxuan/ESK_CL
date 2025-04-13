@@ -1,5 +1,12 @@
 # ESK CHANGELOG
-## RELEASE 1.0 CHANGELOG (LATEST):
+## RELEASE 1.1 CHANGELOG (LATEST):
+- Disabled Gentle Fair Sleepers
+- Enable NEXT_BUDDY feature
+- Upstream 5.10.235 lts
+
+-----------------------------------------------------
+
+## RELEASE 1.0 CHANGELOG:
 - Switch to new versioning system (1.0, 1.1, 1.2,...)
 - Kernel rebase
 - Drop zram writeback
