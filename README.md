@@ -1,6 +1,19 @@
 # ESK CHANGELOG
 ## RELEASE 1.2 CHANGELOG (LATEST):
 #### Add:
+- Some optimization to DAMON
+- Enable DAMON sysfs interface
+- Increase thermal trip points to 16
+- Upstream 5.10.236 lts
+#### Removed:
+- MGLRU
+- sched/core: Use SCHED_RR in place of SCHED_FIFO for all users
+- schedutil : cap iowait boost by uclamp_max
+
+-----------------------------------------------------
+
+## RELEASE 1.2 CHANGELOG (LATEST):
+#### Add:
 - Builtin lz4hc
 - Upstream lz4 1.10.0
 - Don't affine sugov kthreads if DVFS is allowed from any CPU
