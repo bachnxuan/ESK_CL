@@ -1,5 +1,5 @@
 # ESK CHANGELOG
-## RELEASE 1.2 CHANGELOG (LATEST):
+## RELEASE 1.3 CHANGELOG (LATEST):
 #### Add:
 - Some optimization to DAMON
 - Enable DAMON sysfs interface
@@ -12,7 +12,7 @@
 
 -----------------------------------------------------
 
-## RELEASE 1.2 CHANGELOG (LATEST):
+## RELEASE 1.2 CHANGELOG:
 #### Add:
 - Builtin lz4hc
 - Upstream lz4 1.10.0
