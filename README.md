@@ -1,5 +1,62 @@
 # ESK CHANGELOG
-## RELEASE 1.3 CHANGELOG (LATEST):
+## RELEASE 1.4 CHANGELOG (LATEST):
+#### Add:
+- sched: reduce softirq conflicts with RT
+- sched/fair: Remove throughput optimization that keeps tasks on big CPUs
+- sched: Allow newidle balancing to bail out of load_balance
+- sched/fair: Don't needlessly migrate a lone task to a higher capacity CPU
+- sched/fair: Skip idle cfs_rq
+- sched/fair: Don't set LBF_ALL_PINNED unnecessarily
+- sched/fair: Reduce cases for active balance
+- sched/fair: Move avg_scan_cost calculations under SIS_PROP
+- sched/fair: Remove SIS_AVG_CPU
+- sched/features: Distinguish between NORMAL and DEADLINE hrtick
+- sched/fair: Fix negative energy delta in find_energy_efficient_cpu()
+- sched/fair: Fix initial util_avg calculation
+- sched: Fix erroneous definition of sched_feat(RT_PUSH_IPI)
+- sched/pelt: Avoid underestimation of task utilization
+- PM / devfreq: Make the monitor workqueue high priority
+- sched/fair: Set asym priority equally for all CPUs in a performance domain
+- sched/pelt: Relax the sync of load_sum with load_avg
+- sched/pelt: Relax the sync of runnable_sum with runnable_avg
+- sched/pelt: Continue to relax the sync of util_sum with util_avg
+- sched/fair: Prevent dead task groups from regaining cfs_rq's
+- sched/fair: Remove sysctl_sched_migration_cost condition
+- sched/fair: Wait before decaying max_newidle_lb_cost
+- sched/fair: Skip update_blocked_averages if we are defering load balance
+- sched/fair: Account update_blocked_averages in newidle_balance cost
+- sched/fair: Sync load_sum with load_avg after dequeue
+- sched/fair: Ensure that the CFS parent is added after unthrottling
+- sched/fair: Return early from update_tg_cfs_load() if delta == 0
+- sched/fair: Correctly insert cfs_rq's to list on unthrottle
+- sched/pelt: Ensure that *_sum is always synced with *_avg
+- sched/fair: Keep load_avg and load_sum synced
+- sched,fair: Skip newidle_balance if a wakeup is pending
+- sched/fair: Introduce a CPU capacity comparison helper
+- sched/fair: Clean up active balance nr_balance_failed trickery
+- sched/fair: Reduce long-tail newly idle balance cost
+- sched/fair: Optimize test_idle_cores() for !SMT
+- sched/fair: Reorder newidle_balance pulled_task tests
+- sched: Use task_current() instead of 'rq->curr == p'
+- sched/fair: Make sure to try to detach at least one movable task
+- setlocalversion: Switch to ~
+- fs: Upstream SUSFS 1.5.7
+- zram: Prioritize the use of lz4 compression algorithm
+- fs/ntfs3: Fix a couple integer overflows on 32bit systems
+- kernel: printk: Filter out some userspace logs
+- kernel/cpu: Silence abundance of logspam
+- iommu: Silence logging
+- kernel: printk: suspend-resume stfu
+- mm: oom_kill: Reduce some verbose logging
+- dtc: quiet
+- cpufreq: Don't WARN_ON on non-existent cpu
+- build.config.gki: Nuke check_defconfig
+- kernel: Use the stock config for /proc/config.gz
+#### Removed:
+
+-----------------------------------------------------
+
+## RELEASE 1.3 CHANGELOG:
 #### Add:
 - Some optimization to DAMON
 - Enable DAMON sysfs interface
