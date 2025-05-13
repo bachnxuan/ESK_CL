@@ -1,5 +1,25 @@
 # ESK CHANGELOG
-## RELEASE 1.4 CHANGELOG (LATEST):
+## RELEASE 1.5 CHANGELOG (LATEST):
+#### Add:
+- Unsubmodule KernelSU-Next
+- Add managers' signing key (KernelSU-Next, MKSU, rsuntk, xx)
+- Add binder_prio drivers (May useless for AOSP)
+- Add support for LXC build in workflows
+- PM / freezer: Adjust the freeze timeout to 3 seconds
+- mm: kmemleak: Don't die when memory allocation fails
+- mm: vmpressure: Fix a race that would erroneously clear accumulated data
+- mm: vmpressure: Don't cache the window size
+- mm: vmpressure: Interpret zero scanned pages as 100% pressure
+- mm: vmpressure: make vmpressure window variable
+- mm: vmpressure: allow in-kernel clients to subscribe for events
+- kernel: module.c: Force loading of modules that fail symbol version checks
+- thermal: mi_thermal_interface: Add `thermal_max_brightness` node
+- fs/ntfs3: Fix WARNING in ntfs_extend_initialized_size
+#### Removed:
+
+-----------------------------------------------------
+
+## RELEASE 1.4 CHANGELOG:
 #### Add:
 - sched: reduce softirq conflicts with RT
 - sched/fair: Remove throughput optimization that keeps tasks on big CPUs
