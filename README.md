@@ -1,16 +1,17 @@
-# ESK CHANGELOG
-## RELEASE 1.6 CHANGELOG (LATEST):
-#### Add:
+# 📜 ESK CHANGELOG
+
+## 🚀 RELEASE 1.6 CHANGELOG (LATEST):
+#### ✨ Add:
 - Kernel Rebase
 - Re-submodule KernelSU-Next
 - Add support for SukiSU-Ultra and Original KernelSU Manager
 - Turn on CONFIG_HZ_300
 - alarmtimer: Increase wakeup safety margin
   
-#### Removed:
+#### 🗑️ Removed:
 - None
 
-#### Patch changes:
+#### 🩹 Patch changes:
 - lxc.patch:
   + Add (halium) GKI: use Android ABI padding for SYSVIPC task_struct fields
 - Add next_manager.patch (Multi-manager patch):
@@ -25,8 +26,8 @@
 
 -----------------------------------------------------
 
-## RELEASE 1.5 CHANGELOG:
-#### Add:
+## 🏷️ RELEASE 1.5 CHANGELOG:
+#### ✨ Add:
 - Unsubmodule KernelSU-Next
 - Add managers' signing key (KernelSU-Next, MKSU, rsuntk, xx)
 - Add binder_prio drivers (May useless for AOSP)
@@ -42,13 +43,13 @@
 - thermal: mi_thermal_interface: Add `thermal_max_brightness` node
 - fs/ntfs3: Fix WARNING in ntfs_extend_initialized_size
   
-#### Removed:
+#### 🗑️ Removed:
 - None
 
 -----------------------------------------------------
 
-## RELEASE 1.4 CHANGELOG:
-#### Add:
+## 🏷️ RELEASE 1.4 CHANGELOG:
+#### ✨ Add:
 - sched: reduce softirq conflicts with RT
 - sched/fair: Remove throughput optimization that keeps tasks on big CPUs
 - sched: Allow newidle balancing to bail out of load_balance
@@ -101,26 +102,26 @@
 - build.config.gki: Nuke check_defconfig
 - kernel: Use the stock config for /proc/config.gz
   
-#### Removed:
+#### 🗑️ Removed:
 
 -----------------------------------------------------
 
-## RELEASE 1.3 CHANGELOG:
-#### Add:
+## 🏷️ RELEASE 1.3 CHANGELOG:
+#### ✨ Add:
 - Some optimization to DAMON
 - Enable DAMON sysfs interface
 - Increase thermal trip points to 16
 - Upstream 5.10.236 lts
   
-#### Removed:
+#### 🗑️ Removed:
 - MGLRU
 - sched/core: Use SCHED_RR in place of SCHED_FIFO for all users
 - schedutil : cap iowait boost by uclamp_max
 
 -----------------------------------------------------
 
-## RELEASE 1.2 CHANGELOG:
-#### Add:
+## 🏷️ RELEASE 1.2 CHANGELOG:
+#### ✨ Add:
 - Builtin lz4hc
 - Upstream lz4 1.10.0
 - Don't affine sugov kthreads if DVFS is allowed from any CPU
@@ -132,7 +133,7 @@
 - Disable profiling subsystem
 - Further logspam filtering
   
-#### Removed:
+#### 🗑️ Removed:
 - lz4: improve pipeline efficiency
 - lz4: remove unnecessary check of ip
 - lz4: reduce usage of variable cpy on decompression
@@ -146,19 +147,19 @@
 
 -----------------------------------------------------
 
-## RELEASE 1.1 CHANGELOG:
-#### Add:
+## 🏷️ RELEASE 1.1 CHANGELOG:
+#### ✨ Add:
 - Disabled Gentle Fair Sleepers
 - Enable NEXT_BUDDY feature
 - Upstream 5.10.235 lts
 
-#### Removed:
+#### 🗑️ Removed:
 - None
 
 -----------------------------------------------------
 
-## RELEASE 1.0 CHANGELOG:
-#### Add:
+## 🏷️ RELEASE 1.0 CHANGELOG:
+#### ✨ Add:
 - Switch to new versioning system (1.0, 1.1, 1.2,...)
 - Kernel rebase
 - Adapt zram entropy calculation
@@ -180,7 +181,7 @@
 - bpf: Avoid allocating small buffers for map keys and values
 - selinux: Avoid dynamic memory allocation for temporary scontext buffers
   
-#### Removed:
+#### 🗑️ Removed:
 - bfq i/o scheduler
 - menu cpuidle gorvernor
 - DEBUGFS
@@ -188,8 +189,8 @@
 
 -----------------------------------------------------
 
-## RELEASE 250406 CHANGELOG:
-#### Add:
+## 🛠️ RELEASE 250406 CHANGELOG:
+#### ✨ Add:
 - Builtin BIC, Westwood, H-TCP tcp congestion control
 - Enable ECN negotiation
 - Bump TTL to 255
@@ -205,6 +206,6 @@
 - Set schedutil as default scheduler
 - Add uname override for GMS
   
-#### Removed:
+#### 🗑️ Removed:
 - Xiaomi's zram optimization
 - LZ4KD
