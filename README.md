@@ -1,6 +1,30 @@
 # ESK CHANGELOG
 ## RELEASE 1.5 CHANGELOG (LATEST):
 #### Add:
+- Kernel Rebase
+- Re-submodule KernelSU-Next
+- Add support for SukiSU-Ultra and Original KernelSU Manager
+- Turn on CONFIG_HZ_300
+- alarmtimer: Increase wakeup safety margin
+#### Removed:
+
+#### Patch changes:
+- lxc.patch:
+  + Add (halium) GKI: use Android ABI padding for SYSVIPC task_struct fields
+- Add next_manager.patch (Multi-manager patch):
+  + Add support for manager below:
+    * Official KernelSU
+    * MKSU
+    * KernelSU-Next
+    * backslashxx's MKSU
+    * rsuntk's MKSU
+    * SukiSU-Ultra
+
+
+-----------------------------------------------------
+
+## RELEASE 1.5 CHANGELOG (LATEST):
+#### Add:
 - Unsubmodule KernelSU-Next
 - Add managers' signing key (KernelSU-Next, MKSU, rsuntk, xx)
 - Add binder_prio drivers (May useless for AOSP)
