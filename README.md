@@ -1,5 +1,5 @@
 # ESK CHANGELOG
-## RELEASE 1.5 CHANGELOG (LATEST):
+## RELEASE 1.6 CHANGELOG (LATEST):
 #### Add:
 - Kernel Rebase
 - Re-submodule KernelSU-Next
@@ -25,7 +25,7 @@
 
 -----------------------------------------------------
 
-## RELEASE 1.5 CHANGELOG (LATEST):
+## RELEASE 1.5 CHANGELOG:
 #### Add:
 - Unsubmodule KernelSU-Next
 - Add managers' signing key (KernelSU-Next, MKSU, rsuntk, xx)
