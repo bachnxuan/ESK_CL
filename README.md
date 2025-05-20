@@ -6,7 +6,9 @@
 - Add support for SukiSU-Ultra and Original KernelSU Manager
 - Turn on CONFIG_HZ_300
 - alarmtimer: Increase wakeup safety margin
+  
 #### Removed:
+- None
 
 #### Patch changes:
 - lxc.patch:
@@ -39,7 +41,9 @@
 - kernel: module.c: Force loading of modules that fail symbol version checks
 - thermal: mi_thermal_interface: Add `thermal_max_brightness` node
 - fs/ntfs3: Fix WARNING in ntfs_extend_initialized_size
+  
 #### Removed:
+- None
 
 -----------------------------------------------------
 
@@ -96,6 +100,7 @@
 - cpufreq: Don't WARN_ON on non-existent cpu
 - build.config.gki: Nuke check_defconfig
 - kernel: Use the stock config for /proc/config.gz
+  
 #### Removed:
 
 -----------------------------------------------------
@@ -106,6 +111,7 @@
 - Enable DAMON sysfs interface
 - Increase thermal trip points to 16
 - Upstream 5.10.236 lts
+  
 #### Removed:
 - MGLRU
 - sched/core: Use SCHED_RR in place of SCHED_FIFO for all users
@@ -125,6 +131,7 @@
 - Allow single-CPU frequency to drop without idling
 - Disable profiling subsystem
 - Further logspam filtering
+  
 #### Removed:
 - lz4: improve pipeline efficiency
 - lz4: remove unnecessary check of ip
@@ -144,6 +151,9 @@
 - Disabled Gentle Fair Sleepers
 - Enable NEXT_BUDDY feature
 - Upstream 5.10.235 lts
+
+#### Removed:
+- None
 
 -----------------------------------------------------
 
@@ -169,6 +179,7 @@
 - selinux: Avoid dynamic memory allocation for INITCONTEXTLEN buffers
 - bpf: Avoid allocating small buffers for map keys and values
 - selinux: Avoid dynamic memory allocation for temporary scontext buffers
+  
 #### Removed:
 - bfq i/o scheduler
 - menu cpuidle gorvernor
@@ -193,6 +204,7 @@
 - Add many logspam filtering
 - Set schedutil as default scheduler
 - Add uname override for GMS
+  
 #### Removed:
 - Xiaomi's zram optimization
 - LZ4KD
